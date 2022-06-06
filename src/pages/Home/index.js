@@ -57,7 +57,7 @@ const Product = ({ product, index, dispatch, amount }) => (
     </Text>
     <TouchableOpacity
       style={styles.botao}
-      onPress={() => dispatch({ type: '@cart/ADD', product })}
+      onPress={() => dispatch({ type: '@cart/ADD_REQUEST', id: product.id })}
     >
       <View style={styles.cartAmount}>
         <FontAwesome name="cart-plus" size={24} color="white" />

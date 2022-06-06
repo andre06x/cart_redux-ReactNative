@@ -19,9 +19,9 @@ const navTheme = {
 
 const Routes = () => {
   return (
-    <NavigationContainer ref={navigationRef} theme={{ colors: { background: '#191920'}}}>
-      <SafeAreaProvider style={{backgroundColor: "#191920"}}>
-        <Stack.Navigator initialRouteName="Cart" mode="modal" screenOptions={{ headerShown: false }} >
+    <NavigationContainer ref={navigationRef} theme={{ colors: { background: '#191920' } }}>
+      <SafeAreaProvider style={{ backgroundColor: "#191920" }}>
+        <Stack.Navigator initialRouteName="Home" mode="modal" screenOptions={{ headerShown: false }} >
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="Cart" component={Cart} />
         </Stack.Navigator>

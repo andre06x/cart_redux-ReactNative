@@ -9,7 +9,7 @@ const Cart = ({ cart, dispatch, total }) => {
 
   const increment = (product) => {
     dispatch({
-      type: '@cart/UPDATE_AMOUNT',
+      type: '@cart/UPDATE_AMOUNT_REQUEST',
       id: product.id,
       amount: product.amount + 1
     });
@@ -17,7 +17,7 @@ const Cart = ({ cart, dispatch, total }) => {
 
   const decrement = (product) => {
     dispatch({
-      type: '@cart/UPDATE_AMOUNT',
+      type: '@cart/UPDATE_AMOUNT_REQUEST',
       id: product.id,
       amount: product.amount - 1
     });
